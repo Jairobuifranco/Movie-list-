@@ -1,0 +1,21 @@
+/* Global dark background */
+html, body {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Ensure root element is full height */
+#root {
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+/* Remove white scroll glow on focus (optional) */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
