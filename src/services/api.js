@@ -1,4 +1,4 @@
-const BASE_URL = "http://4.237.58.241:3000";
+const BASE_URL = 'https://movie-api-4r5e.onrender.com';
 
 // Movie fetch
 export const fetchMovies = async (page=1, perPage=100) => {
@@ -13,7 +13,6 @@ export const fetchMovieData = async (imdbID) => {
     const response = await fetch(`${BASE_URL}/movies/data/${imdbID}`);
     return await response.json();
 };
-
 // People details fetch
 export const fetchPerson = async (id, token) => {
     const response = await fetch(`${BASE_URL}/people/${id}`,
